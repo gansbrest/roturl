@@ -1,0 +1,24 @@
+{
+  "name": "roturl",
+  "version": "0.0.1",
+  "description": "RotURL is a simple substitution cipher for encoding/obscuring URLs embedded in other URLs (e.g. in a querystring). Also, common chars that need to be escaped (:/?=&%#) are mapped to infrequently used capital letters, so this generally yields shorter querystrings, too.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gansbrest/roturl.git"
+  },
+  "keywords": [
+    "roturl",
+    "rot13",
+    "rot35"
+  ],
+  "author": "Sergey Khalazdinski <gansbrest@gmail.com> (http://distinctplace.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gansbrest/roturl/issues"
+  },
+  "homepage": "https://github.com/gansbrest/roturl"
+}
