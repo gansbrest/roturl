@@ -93,19 +93,11 @@ var strtr = function(str, from, to) {
   return ret;
 };
 
-module.exports = {
+function rot(str) {
+  return strtr(str, 
+     './-:?=&%# ZQXJKVWPY abcdefghijklmnopqrstuvwxyz123456789ABCDEFGHILMNORSTU', 
+     'ZQXJKVWPY ./-:?=&%# 123456789ABCDEFGHILMNORSTUabcdefghijklmnopqrstuvwxyz'
+  );
+}
 
-  rot: function(str) {
-    return strtr(str, 
-       './-:?=&%# ZQXJKVWPY abcdefghijklmnopqrstuvwxyz123456789ABCDEFGHILMNORSTU', 
-       'ZQXJKVWPY ./-:?=&%# 123456789ABCDEFGHILMNORSTUabcdefghijklmnopqrstuvwxyz'
-    ); 
-  },
-
-  derot: function(str) {
-    return strtr(str, 
-       'ZQXJKVWPY ./-:?=&%# 123456789ABCDEFGHILMNORSTUabcdefghijklmnopqrstuvwxyz',
-       './-:?=&%# ZQXJKVWPY abcdefghijklmnopqrstuvwxyz123456789ABCDEFGHILMNORSTU'
-    ); 
-  }
-};
+module.exports = { rot: rot, derot: rot };
